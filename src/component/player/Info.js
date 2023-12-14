@@ -4,7 +4,7 @@ import {games} from "../game/Games";
 function PlayerCard({playerId}) {
     return (
         <div>
-            Player{playerId+1} : <input type='text' name='players' placeholder='Name'/>
+            Player{playerId + 1} : <input type='text' name='players' placeholder='Name'/>
         </div>
     );
 }
@@ -14,6 +14,11 @@ const PlayerInfo = () => {
     const navigate = useNavigate();
     const gameInfo = games.find(item => item.id === +gameId);
     const startGame = () => {
+        const players = document.getElementsByName("players");
+        console.log(players)
+        /*players.map((item, index) => {
+            console.log(item.value);
+        })*/
         alert(`${gameInfo.gameTitle} Start!`)
     }
     return (
