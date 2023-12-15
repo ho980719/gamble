@@ -9,6 +9,7 @@ import PlayerInfo from "./component/player/Info";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./component/layout/Header";
 import {Container} from "react-bootstrap";
+import Main from "./component/Main";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,7 +17,8 @@ root.render(
         <Header />
         <Container className="vh-100">
             <Routes>
-                <Route path='/' element={<GameSelect/>}></Route>
+                <Route path='/' element={<Main/>}></Route>
+                <Route path='/games/select' element={<GameSelect/>}></Route>
                 <Route path='/players'>
                     <Route path='/players/setting/:gameId' element={<PlayerSetting/>}></Route>
                     <Route path='/players/info' element={<PlayerInfo/>}></Route>

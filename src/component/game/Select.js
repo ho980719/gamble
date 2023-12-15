@@ -13,10 +13,10 @@ const GameSelect = () => {
                 games.map((item, i) => {
                     return (
                         <Col key={i}>
-                            <Link to={'/players/setting/'+item.id}>
+                            <Link to={'/players/setting/'+item.id} style={{textDecoration: 'none'}}>
                                 <Card>
                                     <Card.Body>
-                                        <FontAwesomeIcon icon={faBowlingBall} />
+                                        <Card.Img src={process.env.PUBLIC_URL + item.image}></Card.Img>
                                         <Card.Text className="text-center">
                                             {item.gameTitle}
                                         </Card.Text>
@@ -24,14 +24,10 @@ const GameSelect = () => {
                                 </Card>
                             </Link>
                         </Col>
-                        // <Col  className="text-center">
-                        //     </Link>
-                        // </Col>
                     )
                 })
             }
             </Row>
-
         </Container>
     )
 }
