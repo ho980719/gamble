@@ -1,8 +1,6 @@
 import {Link} from "react-router-dom";
 import {games} from "./Games";
-import {Button, Card, Col, Container, Row} from "react-bootstrap";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faBowlingBall} from "@fortawesome/free-solid-svg-icons";
+import {Card, Col, Container, Row} from "react-bootstrap";
 
 
 const GameSelect = () => {

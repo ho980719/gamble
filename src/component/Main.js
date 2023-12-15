@@ -5,7 +5,7 @@ function Main(props) {
     const navigate = useNavigate();
     return (
         <div>
-            <button type="button" className="btn btn-primary" onClick={() => navigate(`/games/select`)}>Create</button>
+            <button type="button" className="btn btn-primary" onClick={() => navigate(`/games/new`)}>Create</button>
         </div>
     );
 }

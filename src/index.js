@@ -18,7 +18,7 @@ root.render(
         <Container className="vh-100">
             <Routes>
                 <Route path='/' element={<Main/>}></Route>
-                <Route path='/games/select' element={<GameSelect/>}></Route>
+                <Route path='/games/new' element={<GameSelect/>}></Route>
                 <Route path='/players'>
                     <Route path='/players/setting/:gameId' element={<PlayerSetting/>}></Route>
                     <Route path='/players/info' element={<PlayerInfo/>}></Route>
